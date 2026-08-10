@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio — каталог</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+
+  <header>
+    <div class="logo">Studio&nbsp;No.&nbsp;3</div>
+    <nav>
+      <a href="index.html" class="active">Каталог</a>
+      <a href="about.html">О нас</a>
+      <a href="delivery.html">Доставка</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">Новая коллекция</div>
+    <h1>Вещи для тихих будней и медленных решений</h1>
+  </section>
+
+  <main>
+    <div class="product-grid" id="productGrid"></div>
+  </main>
+
+  <button class="cart-fab" id="cartFab" aria-label="Открыть корзину">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="21" r="1"></circle>
+      <circle cx="20" cy="21" r="1"></circle>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+    </svg>
+    <span class="cart-badge" id="cartBadge">0</span>
+  </button>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h2>Корзина</h2>
+      <button class="cart-close" id="cartClose" aria-label="Закрыть">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Итого</span>
+        <span class="amount" id="cartTotal">0 ₽</span>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn" disabled>Оформить заказ</button>
+    </div>
+  </aside>
+
+</body>
+</html>
